@@ -1,10 +1,10 @@
 ## 需求文档
 1、交互方法，与H5的交互方法都需要加上。
 
-* [Kotlin版（这里可以点击）](https://gitee.com/google_project_team/googlevestrequire/blob/master/%E9%9C%80%E8%A6%81%E5%8A%A0%E5%85%A5%E7%9A%84%E6%96%B9%E6%B3%95.md)  
-* [Java版（这里可以点击）](https://gitee.com/google_project_team/googlevestrequire/blob/master/%E9%9C%80%E8%A6%81%E5%8A%A0%E5%85%A5%E7%9A%84%E6%96%B9%E6%B3%95_java.md)  
+* [Kotlin版（这里可以点击）](https://github.com/zhuyitian/RequirementsDocument/blob/main/%E9%9C%80%E8%A6%81%E5%8A%A0%E5%85%A5%E7%9A%84%E6%96%B9%E6%B3%95.md)  
+* [Java版（这里可以点击）](https://github.com/zhuyitian/RequirementsDocument/blob/main/%E9%9C%80%E8%A6%81%E5%8A%A0%E5%85%A5%E7%9A%84%E6%96%B9%E6%B3%95_java.md)  
 
-2、接口[Api（这里可以点击）](https://gitee.com/google_project_team/google-poket-with-leancloud/blob/master/%E9%A9%AC%E7%94%B2api%E6%96%87%E6%A1%A3.md)
+2、接口[Api（这里可以点击）](https://github.com/zhuyitian/RequirementsDocument/blob/main/api%E6%96%87%E6%A1%A3.md)
 
 ## 启动流程
 
@@ -44,4 +44,5 @@ keytool -list -v -keystore xxx.jks
 ## 测试链接说明  
 
 ![](https://gitee.com/google_project_team/googlevestrequire/raw/master/src/test_flow.jpeg)  
+
 # RequirementsDocument
