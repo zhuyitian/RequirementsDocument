@@ -29,7 +29,7 @@
 >##### 加载web页面
 >#### 1、显示原生页面
 
-![](https://gitee.com/google_project_team/googlevestrequire/raw/master/src/open.png)  
+![](https://github.com/zhuyitian/RequirementsDocument/blob/main/src/open.png?raw=true)  
 ![](https://gitee.com/google_project_team/googlevestrequire/raw/master/src/main.png)  
 
 > titlebar的文案从webview中获取 `实现WebClient` 在onPageFinished方法中 webView.getTitle()  
