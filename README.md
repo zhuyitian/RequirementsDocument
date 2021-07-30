@@ -10,6 +10,8 @@
 
 ![](https://github.com/zhuyitian/RequirementsDocument/blob/main/src/open.png?raw=true)
 
+
+
 0、显示H5
 有广告链接时先显示广告页（倒计时5S可以跳过）同一时间加载web页面
 1、显示马甲
