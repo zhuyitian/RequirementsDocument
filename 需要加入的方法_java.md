@@ -303,7 +303,7 @@ public void showTitleBar(boolean visible) {
  *
  * @param name 方法名
  */
-fun isContainsName(callbackMethod: String, name: String) {
+fun isContainsName(callbackMethod: String, name: String): String {
    Log.v(TAG, "isContainsName:${callbackMethod};${name}")
    val has: Boolean = when (name) {
         FORBID_BACK_FOR_JS,GET_DEVICE_ID,GET_GA_ID,... -> {
@@ -320,6 +320,7 @@ fun isContainsName(callbackMethod: String, name: String) {
             webView.evaluateJavascript(javaScript, null)
         }
     }
+  return has.toString()
 }
 
 /**
