@@ -365,25 +365,23 @@ public void openBrowser(String url) {
 }
 
 /**
- * 打开一个基本配置的webview （不修改UA、不设置AppJs、可以缓存）
- *  打开新页面  
- *  加载webview的情况分类(判断依据：url、postData、html)
- *     |-------1、只有url：webView.loadUrl()
- *     |-------2、有url和postData：webView.postUrl()
- *     |-------3、有html webView.loadDataWithBaseURL()
+ * 打开一个基本配置的webview （不修改UA、可以缓存）
+ * 打开新页面 
+ * 加载webview的情况分类(判断依据：url、postData、html)
+ *    |-------1、只有url：webView.loadUrl()
+ *    |-------2、有url和postData：webView.postUrl()
+ *    |-------3、有html webView.loadDataWithBaseURL()
  *
- * 
- *  
- * @param json 打开web传参
- * {"title":"", 标题
+ * @param json 打开web传参 选填
+ * {"title":"", 打开时显示的标题
  *  "url":"", 加载的地址
- *  "hasTitleBar":false, 是否显示标题栏
- *  "rewriteTitle":true, 是否通过加载的Web重写标题
+ *  "hasTitleBar":false, 是否显示标题栏 //注意：后台可能会返回null，需做好空值判断，默认设定false
+ *  "rewriteTitle":true, 是否通过加载的Web重写标题 //注意：后台可能会返回null，需做好空值判断，默认设定false
  *  "stateBarTextColor":"black", 状态栏字体颜色 black|white
  *  "titleTextColor":"#FFFFFF", 标题字体颜色
- *  "titleColor":"#FFFFFF", 状态栏和标题背景色
- *  "postData":"", webView post方法时会用到
- *  "html":"", 加载htmlCode（例如：<body></body>）,
+ *  "titleColor":"#FFFFFF", 标题背景色
+ *  "postData":"", webView post方法时需要传参
+ *  "html":"", 加载htmlCode,
  *  "webBack":true, true:web回退(点击返回键webview可以回退就回退，无法回退的时候关闭该页面)|false(点击返回键关闭该页面) 直接关闭页面
  * }
  */
