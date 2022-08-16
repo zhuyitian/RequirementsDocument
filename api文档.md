@@ -27,7 +27,7 @@ countryCode: 具体获取方法，参考下方 CountryCodeUtils.java
 请求例如：
 
 > ```
-> https://d2d0drb98uxrz0.cloudfront.net/admin/client/vestSign.do?vestCode=CUHX4A73&version=1.0&channelCode=google&deviceId=ebe2f38b83fcd5d1&timestamp=1584324183767&contryCode=US
+> https://d2d0drb98uxrz0.cloudfront.net/admin/client/vestSign.do?vestCode=CUHX4A73&version=1.0&channelCode=google&deviceId=ebe2f38b83fcd5d1&timestamp=1584324183767&countryCode=US
 > ```
 
 ### 返回数据样本
