@@ -50,7 +50,7 @@ countryCode: 具体获取方法，参考下方 CountryCodeUtils.java
 			"advOn": 0, //1显示广告
 			"advImg": "https://app.zzwpx.com/", //广告图片地址
 			"advUrl": "https://app.zzwpx.com/", //广告业务链接地址
-			"gtId": "11",
+			"gtId": "11", //现在改为返回facebook id，如果不为空，需要手动进行设置facebook id，具体见下方‘手动设置facebook Id’
 			"um": "11",
 			"anUmengKey": "11", //安卓友盟key
 			"channelName": "google",
@@ -64,6 +64,11 @@ countryCode: 具体获取方法，参考下方 CountryCodeUtils.java
 }
 ```
 
+### 手动设置Facebook Id
+如果接口返回的`gtId`不为空，就需要调用`FacebookSdk.setApplicationId()`接口来进行手动设置Facebook Id。
+
+例如：
+接口返回"gtId":"1212121212"，此时，就需要调用`FacebookSdk.setApplicationId("1212121212")`方法来手动设置Facebook Id。
 
 
 
@@ -156,5 +161,6 @@ public class CountryCodeUtils {
 
 ```
 
-##
+
+
 
