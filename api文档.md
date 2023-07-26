@@ -45,12 +45,12 @@ countryCode: 具体获取方法，参考下方 CountryCodeUtils.java
 			"version": "1.1,1.2",
 			"h5Url": "https://app.zzwpx.com/", //H5业务链接地址
 			"gtMaster": "11",
-			"gtKey": "11",
+			"gtKey": "11", //现在改为返回facebook client token，如果不为空，需要手动进行设置facebook client token，具体见下方‘手动设置 Facebook Client Token’
 			"backgroundCol": "#FFFFFF", //H5的状态栏和titlebar的背景色
 			"advOn": 0, //1显示广告
 			"advImg": "https://app.zzwpx.com/", //广告图片地址
 			"advUrl": "https://app.zzwpx.com/", //广告业务链接地址
-			"gtId": "11", //现在改为返回facebook id，如果不为空，需要手动进行设置facebook id，具体见下方‘手动设置facebook Id’
+			"gtId": "11", //现在改为返回facebook application id，如果不为空，需要手动进行设置facebook application id，具体见下方‘手动设置 Facebook Application Id’
 			"um": "11",
 			"anUmengKey": "11", //安卓友盟key
 			"channelName": "google",
@@ -64,12 +64,17 @@ countryCode: 具体获取方法，参考下方 CountryCodeUtils.java
 }
 ```
 
-### 手动设置Facebook Id
-如果接口返回的`gtId`不为空，就需要调用`FacebookSdk.setApplicationId()`接口来进行手动设置Facebook Id。
+### 手动设置 Facebook Application Id
+如果接口返回的`gtId`不为空，就需要调用`FacebookSdk.setApplicationId()`接口来进行手动设置`Facebook Application Id`。
 
 例如：
-接口返回"gtId":"1212121212"，此时，就需要调用`FacebookSdk.setApplicationId("1212121212")`方法来手动设置Facebook Id。
+接口返回`"gtId":"1212121212"`，此时，就需要调用`FacebookSdk.setApplicationId("1212121212")`方法来手动设置`Facebook Application Id`。
 
+### 手动设置 Facebook Client Token
+如果接口返回的`gtKey`不为空，就需要调用`FacebookSdk.setClientToken()`接口来进行手动设置`Facebook Client Token`。
+
+例如：
+接口返回"gtKey":"64fdb2300e40bc741"，此时，就需要调用`FacebookSdk.setClientToken("64fdb2300e40bc741")`方法来手动设置`Facebook Client Token`。
 
 
 ### 获取countryCode方法
